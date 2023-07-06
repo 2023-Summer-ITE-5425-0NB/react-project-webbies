@@ -1,12 +1,18 @@
 import React from "react";
-import LoginForm from "./components/LoginForm";
-import RegisterForm from "./components/RegisterForm";
+// import LoginForm from "./components/LoginForm";
+// import RegisterForm from "./components/RegisterForm";
 import Dashboard from "./components/Dashboard";
 import Home from './components/Home';
 import Booking from './components/Booking';
 import CurrencyConverter from './components/CurrencyConverter';
 import UserGeneratedContentList from './components/UserGeneratedContentList';
 import UserSubmissionForm from './components/UserSubmissionForm';
+import LocalTransportation from './components/LocalTransportation';
+// import './LocalTransportation.css';
+
+
+
+// import login from './components/Login';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -17,6 +23,8 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 import translations from './components/translations';
 import Language from './components/Language';
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 enum AuthStatus {
   NOT_AUTHENTICATED,
@@ -56,11 +64,14 @@ const App: React.FC = () => {
           <Dashboard />
           <div className="content">
             <Routes>
-              <Route path="/" element={<Booking />} />
+              <Route path="/" element={<Login />} />
               <Route path="/currency-converter" element={<CurrencyConverter />} />
               <Route path="/language" element={<Language />} />
               <Route path="/userGeneratedContentList" element={<UserGeneratedContentList />} />
               <Route path="/userSubmissionForm" element={<UserSubmissionForm />} />
+              <Route path="/Booking" element={<Booking/>} />
+              <Route path="/Register" element={<Register/>} />
+              <Route path="/LocalTransportation" element={<LocalTransportation/>}/>
             </Routes>
           </div>
         </div>

@@ -8,7 +8,10 @@ const Sidebar: React.FC = () => {
     <div className="sidebar">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Login</Link>
+        </li>
+        <li>
+        <Link to="/Booking">Booking</Link>
         </li>
         <li>
           <Link to="/currency-converter">Currency Converter</Link>
@@ -22,6 +25,10 @@ const Sidebar: React.FC = () => {
         <li>
           <Link to="/UserSubmissionForm">User Submission Form</Link>
         </li>
+        <li>
+        <Link to="/LocalTransportation">Local Transportation</Link>
+        </li>
+        
       </ul>
     </div>
   );
