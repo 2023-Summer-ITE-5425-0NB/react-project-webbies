@@ -1,23 +1,24 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import useTranslation, { Languages } from "../hooks/useTranslation";
+import strings from '../lang/Lang';
+import languages from "../config/languages";
 
 const Language: React.FC = () => {
-  const { t, i18n } = useTranslation();
-
-  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedLanguage = e.target.value;
-    i18n.changeLanguage(selectedLanguage);
-  };
+  const [language, setLanguage] = useTranslation();
+  const selectedLanguage = languages.find((lang) => lang.value === language);
 
   return (
     <div>
-      <h1>{t('language.title')}</h1>
+      <h1>{strings.language}</h1>
       <div>
-        <label>{t('language.selectLabel')}</label>
-        <select onChange={handleLanguageChange}>
-          <option value="en">{t('language.english')}</option>
-          <option value="fr">{t('language.french')}</option>
-          <option value="es">{t('language.spanish')}</option>
+        <label>{strings.select_language}</label>
+        <select 
+          onChange={async (lang) => setLanguage(lang.target.value as Languages)}
+          value={selectedLanguage?.value}
+          >
+      <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
         </select>
       </div>
     </div>

@@ -4,6 +4,7 @@ import axios from 'axios';
 import decode from 'jwt-decode';
 import AuthContext, { AuthContextType } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import strings from '../lang/Lang';
 
 const Login = () => {
   const auth = useContext(AuthContext) as AuthContextType;
@@ -25,7 +26,6 @@ const Login = () => {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    console.log('hello');
     let formValid = true;
     const emailPattern =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -70,9 +70,9 @@ const Login = () => {
   };
 
   return (
-    <>
-      <h1>Sign In</h1>
-      <p>Sign Into Your Account</p>
+    <div >
+      <h1>{strings.sign_in}</h1>
+      <p>{strings.sign_info_your_account}</p>
 
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={(e) => onSubmit(e)}>
@@ -101,7 +101,7 @@ const Login = () => {
       <p>
         <Link to='/register'>Register</Link>
       </p>
-    </>
+    </div>
   );
 };
 

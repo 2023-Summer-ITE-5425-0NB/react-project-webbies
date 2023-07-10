@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   background-color: #161515;
-  width: 200px;
 }
 
 .sidebar {
@@ -24,6 +23,7 @@
   padding: 10px;
   color: #fff;
   text-decoration: none;
+  width: 240px;
 }
 
 .sidebar a:hover {

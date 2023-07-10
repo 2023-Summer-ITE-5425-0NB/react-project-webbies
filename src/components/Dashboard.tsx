@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import strings from "../lang/Lang";
 import "./Dashboard.css";
 
 // Sidebar component
@@ -8,25 +9,22 @@ const Sidebar: React.FC = () => {
     <div className="sidebar">
       <ul>
         <li>
-          <Link to="/">Login</Link>
+          <Link to="/">{strings.login}</Link>
         </li>
         <li>
-        <Link to="/Booking">Booking</Link>
+        <Link to="/Booking">{strings.booking}</Link>
         </li>
         <li>
-          <Link to="/currency-converter">Currency Converter</Link>
+          <Link to="/currency-converter">{strings.currency_converter}</Link>
         </li>
         <li>
-          <Link to="/Language">Language</Link>
+          <Link to="/Language">{strings.language}</Link>
         </li>
         <li>
-          <Link to="/UserGeneratedContentList">User Generated Content</Link>
+          <Link to="/UserGeneratedContentList">{strings.user_generated_content}</Link>
         </li>
         <li>
-          <Link to="/UserSubmissionForm">User Submission Form</Link>
-        </li>
-        <li>
-        <Link to="/LocalTransportation">Local Transportation</Link>
+        <Link to="/LocalTransportation">{strings.local_transportation}</Link>
         </li>
         
       </ul>

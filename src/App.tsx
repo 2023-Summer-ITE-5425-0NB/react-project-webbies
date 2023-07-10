@@ -25,6 +25,8 @@ import translations from './components/translations';
 import Language from './components/Language';
 import Login from "./components/Login";
 import Register from "./components/Register";
+import useTranslation from "./hooks/useTranslation";
+import strings from "./lang/Lang";
 
 enum AuthStatus {
   NOT_AUTHENTICATED,
@@ -56,13 +58,15 @@ const App: React.FC = () => {
         debug: true,
       });
   }, []);
+	const [lang] = useTranslation()
 
   return (
-    <I18nextProvider i18n={i18next}>
+    <>
+			{strings.setLanguage(lang)}
       <Router>
         <div className="app">
-          <Dashboard />
-          <div className="content">
+        <Dashboard /> 
+          <div className="content" style={{backgroundColor:'#000'}}>
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/currency-converter" element={<CurrencyConverter />} />
@@ -76,7 +80,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </Router>
-    </I18nextProvider>
+    </>
   );
 };
 
