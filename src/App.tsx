@@ -10,7 +10,7 @@ import UserSubmissionForm from './components/UserSubmissionForm';
 import LocalTransportation from './components/LocalTransportation';
 import Weather from './components/Weather';
 import Maps from './components/Maps';
-
+import SocialSharing from "./components/SocialSharing";
 // import './LocalTransportation.css';
 
 
@@ -81,6 +81,7 @@ const App: React.FC = () => {
               <Route path="/LocalTransportation" element={<LocalTransportation/>}/>
               <Route path="/Weather" element={<Weather/>}/>
               <Route path="/Maps" element={<Maps/>}/>
+              <Route path="/socialSharing" element={<SocialSharing />} />
             </Routes>
           </div>
         </div>
