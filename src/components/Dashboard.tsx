@@ -26,7 +26,12 @@ const Sidebar: React.FC = () => {
         <li>
         <Link to="/LocalTransportation">{strings.local_transportation}</Link>
         </li>
-        
+        <li>
+        <Link to="/Weather">Weather{strings.weather}</Link>
+        </li>
+        <li>
+        <Link to="/Maps">Maps{strings.maps}</Link>
+        </li>
       </ul>
     </div>
   );

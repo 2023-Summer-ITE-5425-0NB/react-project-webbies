@@ -27,3 +27,21 @@ External APIs: Integration with language and currency conversion APIs.
 Node.js: JavaScript runtime environment.
 
 Express.js: Web application framework for Node.js.
+
+
+<!-- Sai Sanju Reddy - N01515886
+
+Weather Information: Display current and forecasted weather conditions for each destination to help users plan their trips accordingly.
+
+Interactive Maps: Integrate interactive maps that highlight routes and provide directions.
+
+Added Code - routes in app.tsx and dashboard.tsx,weather.tsx,weather.css,maps.tsx, maps.css files.
+
+Added images in public and assets.
+
+Libraries downloaded - 
+
+npm install react-router-dom
+npm install axios
+npm install react-leaflet -->
+

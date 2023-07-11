@@ -67,3 +67,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* .weather.body {
+  background-image: url('./assets/Weather2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
