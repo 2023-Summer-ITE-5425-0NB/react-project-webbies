@@ -17,8 +17,13 @@ You have also contributed CSS styling to the "Travel Guide" project. The applica
 The "Travel Guide" project utilizes the following technologies:
 
 React: A JavaScript library for building user interfaces.
+
 CSS: Cascading Style Sheets for styling and layout.
+
 API: Custom-built API for handling user-generated travel data.
+
 External APIs: Integration with language and currency conversion APIs.
+
 Node.js: JavaScript runtime environment.
+
 Express.js: Web application framework for Node.js.
