@@ -1,0 +1,99 @@
+{
+    "destination": "Canada",
+    "locations": [
+      {
+        "name": "Toronto",
+        "image": "src/assets/Toronto.jpg",
+        "description": "Toronto, the capital of the province of Ontario, is a major Canadian city along Lake Ontario’s northwestern shore. It's a dynamic metropolis with a core of soaring skyscrapers, all dwarfed by the iconic, free-standing CN Tower. Toronto also has many green spaces, from the orderly oval of Queen’s Park to 400-acre High Park and its trails, sports facilities and zoo",
+        "province": "Ontario",
+        "latitude": 43.651070,
+        "longitude": -79.347015,
+        "attractions": [
+          {
+            "name": "CN Tower",
+            "image": "src/assets/CN_Tower.jpg",
+            "latitude": 43.642566,
+            "longitude": -79.387057,
+            "description": "A must-visit landmark with stunning city views."
+          },
+          {
+            "name": "Royal Ontario Museum",
+            "image": "src/assets/Royal_Ontario_Musium.png",
+            "latitude": 43.667709,
+            "longitude": -79.394777,
+            "description": "Explore art, culture, and natural history."
+          },
+          {
+            "name": "Distillery District",
+            "image": "src/assets/Distillery_District.jpg",
+            "latitude": 43.650743,
+            "longitude": -79.359870,
+            "description": "Experience history, art, and vibrant entertainment."
+          }
+        ]
+      },
+      {
+        "name": "Vancouver",
+        "image": "src/assets/Vancouver.jpg",
+        "description": "Vancouver, a bustling west coast seaport in British Columbia, is among Canada’s densest, most ethnically diverse cities. A popular filming location, it’s surrounded by mountains, and also has thriving art, theatre and music scenes. Vancouver Art Gallery is known for its works by regional artists, while the Museum of Anthropology houses preeminent First Nations collections.",
+        "province": "British Columbia",
+        "latitude": 49.2827,
+        "longitude": -123.1207,
+        "attractions": [
+          {
+            "name": "Stanley Park",
+            "image": "src/assets/StainleyPark.jpg",
+            "latitude": 49.3017,
+            "longitude": -123.1416,
+            "description": "Enjoy nature and outdoor activities in the heart of the city."
+          },
+          {
+            "name": "Gastown",
+            "image": "src/assets/Gastown.jpg",
+            "latitude": 49.2834,
+            "longitude": -123.1060,
+            "description": "Explore historic charm, shops, and restaurants."
+          },
+          {
+            "name": "Granville Island",
+            "image": "src/assets/GranvilleIsland.jpg",
+            "latitude": 49.2719,
+            "longitude": -123.1330,
+            "description": "Discover a vibrant public market and cultural hub."
+          }
+        ]
+      },
+      {
+        "name": "Montreal",
+        "image": "src/assets/Montreal.jpg",
+        "description": "Montreal is the largest city in the province of Quebec.",
+        "province": "Quebec",
+        "latitude": 45.5017,
+        "longitude": -73.5673,
+        "attractions": [
+          {
+            "name": "Old Montreal",
+            "image": "src/assets/OldMontreal.jpg",
+            "latitude": 45.5044,
+            "longitude": -73.5567,
+            "description": "Experience the historic charm and cobblestone streets."
+          },
+          {
+            "name": "Mont-Royal",
+            "image": "src/assets/MontRoyal.jpg",
+            "latitude": 45.5061,
+            "longitude": -73.5877,
+            "description": "Enjoy outdoor activities and panoramic views from the mountain."
+          },
+          {
+            "name": "Notre-Dame Basilica",
+            "image": "src/assets/Basilica.jpg",
+            "latitude": 45.5045,
+            "longitude": -73.5567,
+            "description": "Marvel at the stunning Gothic Revival architecture."
+          }
+        ]
+      }
+    ]
+  }
+  

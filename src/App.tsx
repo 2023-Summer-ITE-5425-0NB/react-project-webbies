@@ -10,11 +10,9 @@ import UserSubmissionForm from './components/UserSubmissionForm';
 import LocalTransportation from './components/LocalTransportation';
 import Weather from './components/Weather';
 import Maps from './components/Maps';
+import DestinationDetails from "./components/DestinationDetails";
 
 // import './LocalTransportation.css';
-
-
-
 // import login from './components/Login';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -81,6 +79,7 @@ const App: React.FC = () => {
               <Route path="/LocalTransportation" element={<LocalTransportation/>}/>
               <Route path="/Weather" element={<Weather/>}/>
               <Route path="/Maps" element={<Maps/>}/>
+              <Route path="/destination-details" element={<DestinationDetails/>}/>
             </Routes>
           </div>
         </div>

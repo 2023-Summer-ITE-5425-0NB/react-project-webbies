@@ -9,5 +9,9 @@ const data = {
     local_transportation: "Transport local",
     sign_in: "Se connecter",
     sign_info_your_account: "Connectez-vous à votre compte",
+    destination_details:"Détails de la destination",
+    rating: "Ratings"
+
+
 }
 export default data;

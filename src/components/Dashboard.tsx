@@ -32,6 +32,12 @@ const Sidebar: React.FC = () => {
         <li>
         <Link to="/Maps">Maps{strings.maps}</Link>
         </li>
+        <li>
+          <Link to="/destination-details">{strings.destination_details}</Link>
+        </li>
+        <li>
+          <Link to="/ratings">{strings.rating}</Link>
+        </li>
       </ul>
     </div>
   );
