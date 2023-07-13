@@ -10,12 +10,9 @@ import UserSubmissionForm from './components/UserSubmissionForm';
 import LocalTransportation from './components/LocalTransportation';
 import Weather from './components/Weather';
 import Maps from './components/Maps';
-<<<<<<< HEAD
 import DestinationDetails from "./components/DestinationDetails";
 
-=======
 import SocialSharing from "./components/SocialSharing";
->>>>>>> d62a3e6e5885c8c44185c4844906f5e7192a5368
 // import './LocalTransportation.css';
 // import login from './components/Login';
 
@@ -83,11 +80,8 @@ const App: React.FC = () => {
               <Route path="/LocalTransportation" element={<LocalTransportation/>}/>
               <Route path="/Weather" element={<Weather/>}/>
               <Route path="/Maps" element={<Maps/>}/>
-<<<<<<< HEAD
               <Route path="/destination-details" element={<DestinationDetails/>}/>
-=======
               <Route path="/socialSharing" element={<SocialSharing />} />
->>>>>>> d62a3e6e5885c8c44185c4844906f5e7192a5368
             </Routes>
           </div>
         </div>

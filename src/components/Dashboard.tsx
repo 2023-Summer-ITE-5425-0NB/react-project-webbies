@@ -35,16 +35,14 @@ const Sidebar: React.FC = () => {
           <Link to="/Maps">Maps{strings.maps}</Link>
         </li>
         <li>
-<<<<<<< HEAD
           <Link to="/destination-details">{strings.destination_details}</Link>
         </li>
         <li>
           <Link to="/ratings">{strings.rating}</Link>
         </li>
-=======
+        <li> {/* Added missing <li> tag */}
           <Link to="/socialSharing">Social Sharing</Link>
-        </li>{" "}
->>>>>>> d62a3e6e5885c8c44185c4844906f5e7192a5368
+        </li>
       </ul>
     </div>
   );
