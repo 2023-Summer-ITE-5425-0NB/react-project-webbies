@@ -12,7 +12,7 @@ const Sidebar: React.FC = () => {
           <Link to="/">{strings.login}</Link>
         </li>
         <li>
-        <Link to="/Booking">{strings.booking}</Link>
+          <Link to="/Booking">{strings.booking}</Link>
         </li>
         <li>
           <Link to="/currency-converter">{strings.currency_converter}</Link>
@@ -21,23 +21,30 @@ const Sidebar: React.FC = () => {
           <Link to="/Language">{strings.language}</Link>
         </li>
         <li>
-          <Link to="/UserGeneratedContentList">{strings.user_generated_content}</Link>
+          <Link to="/UserGeneratedContentList">
+            {strings.user_generated_content}
+          </Link>
         </li>
         <li>
-        <Link to="/LocalTransportation">{strings.local_transportation}</Link>
+          <Link to="/LocalTransportation">{strings.local_transportation}</Link>
         </li>
         <li>
-        <Link to="/Weather">Weather{strings.weather}</Link>
+          <Link to="/Weather">Weather{strings.weather}</Link>
         </li>
         <li>
-        <Link to="/Maps">Maps{strings.maps}</Link>
+          <Link to="/Maps">Maps{strings.maps}</Link>
         </li>
         <li>
+<<<<<<< HEAD
           <Link to="/destination-details">{strings.destination_details}</Link>
         </li>
         <li>
           <Link to="/ratings">{strings.rating}</Link>
         </li>
+=======
+          <Link to="/socialSharing">Social Sharing</Link>
+        </li>{" "}
+>>>>>>> d62a3e6e5885c8c44185c4844906f5e7192a5368
       </ul>
     </div>
   );
