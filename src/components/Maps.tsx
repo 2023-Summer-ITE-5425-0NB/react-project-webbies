@@ -69,7 +69,7 @@ const InteractiveMap: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="Text-at-center" >
       <button onClick={handleGeolocation}>Use Current Location</button>
       <input
         type="text"

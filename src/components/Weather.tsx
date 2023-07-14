@@ -45,21 +45,22 @@ const Weather: React.FC = () => {
   };
 
   return (
-    <div>
-      <p> Enter The City Name - </p> 
+    <div className="Text-align-at-center" >
+      <p className= "entercityname"> Enter The City Name - </p> 
       <input
         type="text"
         value={cityName}
         onChange={(e) => setCityName(e.target.value)}
         placeholder="City Name"
       />
+      <br/>
       {loading ? (
         <div>Loading...</div>
       ) : !weatherData ? (
-        <div>Error loading weather data.</div>
+        <div className='Red-Color'><br/>Error Loading Weather Data!!</div>
       ) : (
-        <div>
-          <h2>Weather Information for {weatherData.name}</h2>
+        <div className='Display'>
+          <h2>Weather Information For {weatherData.name}</h2>
           <p>Temperature: {weatherData.main.temp}°C</p>
           <p>Description: {weatherData.weather[0].description}</p>
           <button onClick={handleSave}>Save Weather Data</button>
