@@ -3,7 +3,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const database = require("./config/database");
 const UserRouter = require("./routes/UserRouter");
-
+const WeatherData = require("./routes/WeatherData");
 
 const app = express();
 
@@ -33,6 +33,7 @@ app.use(cors());
 //app.use(cors(corsOptions));
 
 app.use(UserRouter);
+app.use('/api/login/weatherData', WeatherData);
 //app.use(PropertiesRouter);
 
 try {

@@ -34,7 +34,7 @@
   }
   
   body {
-    background-image: url('./assets/Weather2.jpg');
+    background-image: url('./assets/Weather2.jpg') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
