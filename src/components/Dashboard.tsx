@@ -37,9 +37,7 @@ const Sidebar: React.FC = () => {
         <li>
           <Link to="/destination-details">{strings.destination_details}</Link>
         </li>
-        <li>
-          <Link to="/ratings">{strings.rating}</Link>
-        </li>
+    
         <li> {/* Added missing <li> tag */}
           <Link to="/socialSharing">Social Sharing</Link>
         </li>

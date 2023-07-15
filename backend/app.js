@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const database = require("./config/database");
 const UserRouter = require("./routes/UserRouter");
 const WeatherData = require("./routes/WeatherData");
+const locationRoute = require("./routes/locationRoute");
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.use(cors());
 app.use(UserRouter);
 app.use('/api/login/weatherData', WeatherData);
 //app.use(PropertiesRouter);
+app.use('/api/login/locations', locationRoute)
 
 try {
   mongoose.connect(database.url)
