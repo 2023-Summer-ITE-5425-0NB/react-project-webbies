@@ -8,7 +8,7 @@
 
 # Login & signUp,Local Transportation : Priyadarshini veeramneni, 
 # Maps & Weather: Sai Sanju Reddy Puram,
- # Destination Details & Ratings: Supriya Chintala,
+ # Destination Details & Ratings: Supriya Chintala
  # Language ,Currency Converter & User Generated Content : Jay Patel,
  # Booking & Social Sharing:Samarth Joshi.
 

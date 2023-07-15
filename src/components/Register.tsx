@@ -52,24 +52,7 @@ export default function Register() {
   return (
     <div className="mx-auto flex items-center justify-center h-screen p-10">
       <div className="mx-auto flex flex-col bg-white shadow-lg rounded-lg py-4 px-12">
-        <a href="login" className=" decoration-gray-200 text-gray-500 text-xs mb-4 flex align-middle">
-          {" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-4 h-4 mr-1"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-            />
-          </svg>
-          Back to Login{" "}
-        </a>
+        
         <span className="font-bold text-2xl text-center">Signup </span>
         <div className="mb-4 mt-4">
           <label className="block font-medium text-gray-700 mb-2">Name</label>
@@ -129,6 +112,10 @@ export default function Register() {
           >
             Sign Up
           </button>
+          <a href="/" className=" decoration-gray-200 text-gray-500 text-xs mb-4 flex align-middle">
+          
+          Already Registered? Login
+        </a>
         </div>
       </div>
     </div>

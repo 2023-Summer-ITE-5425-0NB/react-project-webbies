@@ -39,24 +39,7 @@ const Login = () => {
   return (
     <div className="flex flex-col items-center h-screen justify-center">
       <div className="flex flex-col  mx-auto bg-white shadow-lg rounded-lg py-4 px-12">
-      <a href="register" className=" decoration-gray-200 text-gray-500 text-xs mb-4 flex align-middle">
-          {" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.0}
-            stroke="currentColor"
-            className="w-4 h-4 mr-1"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-            />
-          </svg>
-          Back to Signup{" "}
-        </a>
+      
         <h1 className="text-3xl font-bold text-center mb-10 ">Login</h1>
         <div className="mb-4">
           <input
@@ -86,7 +69,12 @@ const Login = () => {
         >
           Login
         </button>
+      
         </div>
+        <a href="register" className=" decoration-gray-200 text-gray-500 text-xs mb-4 flex align-middle">
+          
+          Don't have Login? Signup
+        </a>
       </div>
     </div>
   );
