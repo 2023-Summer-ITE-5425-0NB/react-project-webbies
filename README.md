@@ -12,7 +12,3 @@
  # Language ,Currency Converter & User Generated Content : Jay Patel,
  # Booking & Social Sharing:Samarth Joshi.
 
-# Test Credentials: 
-# (Mongo DB login credentials)
-# email: veeramaneni.priyadarshini123@gmail.com 
-# password: Priya@123
