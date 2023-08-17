@@ -10,6 +10,8 @@ const data = {
     sign_in: "Iniciar sesión",
     sign_info_your_account: "Inicia sesión en tu cuenta",
     destination_details:"Destination Deteails",
-    rating: "Ratings"
+    rating: "Ratings",
+    weather: "Clima", 
+    maps: "Mapas", 
 }
 export default data;

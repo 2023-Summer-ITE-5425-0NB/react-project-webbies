@@ -11,6 +11,8 @@ const data = {
     sign_info_your_account:"Sign Into Your Account",
     destination_details:"Destination Deteails",
     rating:"Ratings",
+    weather:"Weather",
+    maps:"Maps",
 
 
 }

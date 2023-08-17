@@ -29,10 +29,10 @@ const Sidebar: React.FC = () => {
           <Link to="/LocalTransportation">{strings.local_transportation}</Link>
         </li>
         <li>
-          <Link to="/Weather">Weather{strings.weather}</Link>
+          <Link to="/Weather">{strings.weather}</Link>
         </li>
         <li>
-          <Link to="/Maps">Maps{strings.maps}</Link>
+          <Link to="/Maps">{strings.maps}</Link>
         </li>
         <li>
           <Link to="/destination-details">{strings.destination_details}</Link>

@@ -10,8 +10,8 @@ const data = {
     sign_in: "Se connecter",
     sign_info_your_account: "Connectez-vous à votre compte",
     destination_details:"Détails de la destination",
-   
-
+    weather: "Météo",
+    maps: "Cartes",
 
 }
 export default data;

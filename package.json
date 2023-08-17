@@ -1,9 +1,12 @@
 {
+  "homepage": "https://github.com/2023-Summer-ITE-5425-0NB/react-project-webbies#readme",
   "name": "travel-guide",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -30,6 +33,7 @@
     "react-router-dom": "^6.14.1"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.3",
     "@types/node": "^20.3.1",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
@@ -39,6 +43,7 @@
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "gh-pages": "^6.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   },
@@ -52,6 +57,5 @@
   "bugs": {
     "url": "https://github.com/2023-Summer-ITE-5425-0NB/react-project-webbies/issues"
   },
-  "homepage": "https://github.com/2023-Summer-ITE-5425-0NB/react-project-webbies#readme",
   "description": "The \"Travel Guide\" project is a collaborative effort developed by your group. It is a React application that serves as a comprehensive guide for travelers, providing valuable information, travel recommendations, and interactive features to enhance the travel experience. The project combines React components, API integration, CSS styling, and other functionalities to create a seamless and visually appealing user interface."
 }

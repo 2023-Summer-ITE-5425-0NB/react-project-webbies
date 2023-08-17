@@ -1,11 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents,Polyline } from 'react-leaflet';
-
+import { MapContainer, TileLayer, Marker, Popup, useMapEvents, Polyline } from 'react-leaflet';
 import type { LatLngExpression } from 'leaflet';
-
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import axios from 'axios';
+
+const ChangeView = ({ center, zoom }: { center: LatLngExpression | null; zoom: number }) => {
+  const map = useMapEvents({
+    load: () => {
+      if (center) {
+        map.setView(center, zoom);
+      }
+    },
+  });
+
+  return null;
+};
 
 const InteractiveMap: React.FC = () => {
   const [currentLocation, setCurrentLocation] = useState<[number, number] | null>(null);
@@ -37,39 +47,19 @@ const InteractiveMap: React.FC = () => {
     });
   };
 
-  const handleDestination = (lat: number, lng: number) => {
-    setDestination([lat, lng]);
-  };
-
   useEffect(() => {
-    // Create custom marker icon
     const customMarkerIcon = L.icon({
-      iconUrl:'.././marker-icon.png',
+      iconUrl: '.././marker-icon.png',
       iconSize: [25, 41],
       iconAnchor: [12, 41],
       popupAnchor: [1, -34],
-    //   shadowUrl:'.././marker-shadow.png',
-    //   shadowSize: [41, 41],
     });
 
-    // Set default marker icon
     L.Marker.prototype.options.icon = customMarkerIcon;
   }, []);
 
-  const ChangeView = ({ center, zoom }: { center: LatLngExpression | null; zoom: number }) => {
-    const map = useMapEvents({
-      load: () => {
-        if (center) {
-          map.setView(center, zoom);
-        }
-      },
-    });
-
-    return null;
-  };
-
   return (
-    <div className="Text-at-center" >
+    <div className="Text-at-center">
       <button onClick={handleGeolocation}>Use Current Location</button>
       <input
         type="text"

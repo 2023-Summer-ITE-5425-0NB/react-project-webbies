@@ -8,8 +8,8 @@ import CurrencyConverter from './components/CurrencyConverter';
 import UserGeneratedContentList from './components/UserGeneratedContentList';
 import UserSubmissionForm from './components/UserSubmissionForm';
 import LocalTransportation from './components/LocalTransportation';
-import Weather from './components/Weather';
-import Maps from './components/Maps';
+// import Weather from './components/Weather';
+// import Maps from './components/Maps';
 import DestinationDetails from "./components/DestinationDetails";
 
 import SocialSharing from "./components/SocialSharing";
@@ -27,6 +27,8 @@ import translations from './components/translations';
 import Language from './components/Language';
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Maps from "./components/Maps";
+import Weather from "./components/Weather";
 import useTranslation from "./hooks/useTranslation";
 import strings from "./lang/Lang";
 
