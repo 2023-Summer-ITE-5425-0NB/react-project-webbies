@@ -22,7 +22,7 @@ const InteractiveMap: React.FC = () => {
   const [destination, setDestination] = useState<[number, number] | null>(null);
   const [directions, setDirections] = useState<any>(null);
   const [mapCenter, setMapCenter] = useState<LatLngExpression | null>(null);
-  const [zoomLevel, setZoomLevel] = useState<number>(13);
+  // const [zoomLevel, setZoomLevel] = useState<number>(13);
 
   useEffect(() => {
     if (currentLocation && destination) {
